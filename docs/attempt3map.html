@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3b74c69eac8410f8932f73a131eff1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d3b74c69eac8410f8932f73a131eff1d" ></div>
+        
+</body>
+<script>    
+    
+            var map_d3b74c69eac8410f8932f73a131eff1d = L.map(
+                "map_d3b74c69eac8410f8932f73a131eff1d",
+                {
+                    center: [43.0, -75.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    minZoom: 6,
+                    scrollWheelZoom: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c3b4cca42ba41d6aa838177c549c4fb = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+            var circle_marker_8949cbb406764e16a7f91f38a25d255c = L.circleMarker(
+                [42.662094, -73.849075],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7449, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_85c89545fcf5483f80841ed5b988470d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cc206f1b4a3492c8dee92797b144171 = $(`<div id="html_6cc206f1b4a3492c8dee92797b144171" style="width: 100.0%; height: 100.0%;">Albany County</div>`)[0];
+            popup_85c89545fcf5483f80841ed5b988470d.setContent(html_6cc206f1b4a3492c8dee92797b144171);
+        
+
+        circle_marker_8949cbb406764e16a7f91f38a25d255c.bindPopup(popup_85c89545fcf5483f80841ed5b988470d)
+        ;
+
+        
+    
+    
+            var circle_marker_4a11afedb0884192b329c02e8aadee43 = L.circleMarker(
+                [42.232937, -78.026093],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9446, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_ec27c9e917ef4f72afbf7aa3bbb814aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a31672219874ead81da127c441f9e05 = $(`<div id="html_3a31672219874ead81da127c441f9e05" style="width: 100.0%; height: 100.0%;">Allegany County</div>`)[0];
+            popup_ec27c9e917ef4f72afbf7aa3bbb814aa.setContent(html_3a31672219874ead81da127c441f9e05);
+        
+
+        circle_marker_4a11afedb0884192b329c02e8aadee43.bindPopup(popup_ec27c9e917ef4f72afbf7aa3bbb814aa)
+        ;
+
+        
+    
+    
+            var circle_marker_c7706c6cee6f4596aa94f6241513e5d2 = L.circleMarker(
+                [40.84676, -73.873207],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.9211, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_10940d8c5e454ccdaa84ff26645fd244 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8197dad940f64015976265d00c52c97e = $(`<div id="html_8197dad940f64015976265d00c52c97e" style="width: 100.0%; height: 100.0%;">Bronx County</div>`)[0];
+            popup_10940d8c5e454ccdaa84ff26645fd244.setContent(html_8197dad940f64015976265d00c52c97e);
+        
+
+        circle_marker_c7706c6cee6f4596aa94f6241513e5d2.bindPopup(popup_10940d8c5e454ccdaa84ff26645fd244)
+        ;
+
+        
+    
+    
+            var circle_marker_180ffc5392a64b8db43180cf4679288d = L.circleMarker(
+                [42.136986, -75.888313],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8862, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_7807d2638f1e454cb06fff2bfb8580ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ef455bae72142b19380526454742753 = $(`<div id="html_1ef455bae72142b19380526454742753" style="width: 100.0%; height: 100.0%;">Broome County</div>`)[0];
+            popup_7807d2638f1e454cb06fff2bfb8580ec.setContent(html_1ef455bae72142b19380526454742753);
+        
+
+        circle_marker_180ffc5392a64b8db43180cf4679288d.bindPopup(popup_7807d2638f1e454cb06fff2bfb8580ec)
+        ;
+
+        
+    
+    
+            var circle_marker_cae8b27d3e9f4ba7955a66b70eaf9dca = L.circleMarker(
+                [42.230316, -78.63820600000003],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9464, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_2a14b17c7ba943f5a5952d7e9aeea523 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e342bb7977914ff69fb62d3c61a0590d = $(`<div id="html_e342bb7977914ff69fb62d3c61a0590d" style="width: 100.0%; height: 100.0%;">Cattaraugus County</div>`)[0];
+            popup_2a14b17c7ba943f5a5952d7e9aeea523.setContent(html_e342bb7977914ff69fb62d3c61a0590d);
+        
+
+        circle_marker_cae8b27d3e9f4ba7955a66b70eaf9dca.bindPopup(popup_2a14b17c7ba943f5a5952d7e9aeea523)
+        ;
+
+        
+    
+    
+            var circle_marker_7c9985b524ac463c9bed8b866c656d96 = L.circleMarker(
+                [43.0, -76.56666700000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9594, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_c0a2328b4e3244bfa98019352fcc52bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed328bf29d3e4d20836cfb12b1739359 = $(`<div id="html_ed328bf29d3e4d20836cfb12b1739359" style="width: 100.0%; height: 100.0%;">Cayuga County</div>`)[0];
+            popup_c0a2328b4e3244bfa98019352fcc52bd.setContent(html_ed328bf29d3e4d20836cfb12b1739359);
+        
+
+        circle_marker_7c9985b524ac463c9bed8b866c656d96.bindPopup(popup_c0a2328b4e3244bfa98019352fcc52bd)
+        ;
+
+        
+    
+    
+            var circle_marker_ea031341a4264b35a778cf703796633b = L.circleMarker(
+                [42.3, -79.41],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6185, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_cd3996bfbf8d48a2a61875735b013e9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_217a1395f65742209b63ce851f2b1367 = $(`<div id="html_217a1395f65742209b63ce851f2b1367" style="width: 100.0%; height: 100.0%;">Chautauqua County</div>`)[0];
+            popup_cd3996bfbf8d48a2a61875735b013e9f.setContent(html_217a1395f65742209b63ce851f2b1367);
+        
+
+        circle_marker_ea031341a4264b35a778cf703796633b.bindPopup(popup_cd3996bfbf8d48a2a61875735b013e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_39e1549163974b52848b693932236087 = L.circleMarker(
+                [42.14, -76.76],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8766, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_019564da16c749ac97c5c4d583054ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e60a8c183f8347bc95c94693f8a5ed1c = $(`<div id="html_e60a8c183f8347bc95c94693f8a5ed1c" style="width: 100.0%; height: 100.0%;">Chemung County</div>`)[0];
+            popup_019564da16c749ac97c5c4d583054ce8.setContent(html_e60a8c183f8347bc95c94693f8a5ed1c);
+        
+
+        circle_marker_39e1549163974b52848b693932236087.bindPopup(popup_019564da16c749ac97c5c4d583054ce8)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9517bdaf5a49e5ba47162ff1d0ab81 = L.circleMarker(
+                [42.5, -75.62],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3341, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_bab2860ca81f411aa853a18db86c473a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce545ab8dadc4e79aa9958e4069e464e = $(`<div id="html_ce545ab8dadc4e79aa9958e4069e464e" style="width: 100.0%; height: 100.0%;">Chenango County</div>`)[0];
+            popup_bab2860ca81f411aa853a18db86c473a.setContent(html_ce545ab8dadc4e79aa9958e4069e464e);
+        
+
+        circle_marker_9e9517bdaf5a49e5ba47162ff1d0ab81.bindPopup(popup_bab2860ca81f411aa853a18db86c473a)
+        ;
+
+        
+    
+    
+            var circle_marker_6ca07485fadb40f6b9204f4a08c6cd27 = L.circleMarker(
+                [44.74, -73.68],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8898, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_0c63b71505c8457e8773985256ed0622 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_854c2fd6ac744b2d97871676b2812384 = $(`<div id="html_854c2fd6ac744b2d97871676b2812384" style="width: 100.0%; height: 100.0%;">Clinton County</div>`)[0];
+            popup_0c63b71505c8457e8773985256ed0622.setContent(html_854c2fd6ac744b2d97871676b2812384);
+        
+
+        circle_marker_6ca07485fadb40f6b9204f4a08c6cd27.bindPopup(popup_0c63b71505c8457e8773985256ed0622)
+        ;
+
+        
+    
+    
+            var circle_marker_a3ee4f2f27ab41589ced6959c2958079 = L.circleMarker(
+                [42.25, -73.63],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.473, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_d56391939a704519843a3f269c5f01ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58e203b257274ef6a8a091cb126e1246 = $(`<div id="html_58e203b257274ef6a8a091cb126e1246" style="width: 100.0%; height: 100.0%;">Columbia County</div>`)[0];
+            popup_d56391939a704519843a3f269c5f01ac.setContent(html_58e203b257274ef6a8a091cb126e1246);
+        
+
+        circle_marker_a3ee4f2f27ab41589ced6959c2958079.bindPopup(popup_d56391939a704519843a3f269c5f01ac)
+        ;
+
+        
+    
+    
+            var circle_marker_3a07f864c1b140f493b3f4724ff19c8e = L.circleMarker(
+                [42.6, -76.06666700000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5331, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_26e53581466d438dbb8245ea2fac1788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_276cb5b2edc041bdaa3862ccbebdee60 = $(`<div id="html_276cb5b2edc041bdaa3862ccbebdee60" style="width: 100.0%; height: 100.0%;">Cortland County</div>`)[0];
+            popup_26e53581466d438dbb8245ea2fac1788.setContent(html_276cb5b2edc041bdaa3862ccbebdee60);
+        
+
+        circle_marker_3a07f864c1b140f493b3f4724ff19c8e.bindPopup(popup_26e53581466d438dbb8245ea2fac1788)
+        ;
+
+        
+    
+    
+            var circle_marker_68e07a238aab4dae9914ef438d677448 = L.circleMarker(
+                [42.2, -74.96],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.178, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_c1843dd9322744a6908a6ab1952ce279 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb3c869da98a4527b7344cac95ca6478 = $(`<div id="html_fb3c869da98a4527b7344cac95ca6478" style="width: 100.0%; height: 100.0%;">Delaware County</div>`)[0];
+            popup_c1843dd9322744a6908a6ab1952ce279.setContent(html_fb3c869da98a4527b7344cac95ca6478);
+        
+
+        circle_marker_68e07a238aab4dae9914ef438d677448.bindPopup(popup_c1843dd9322744a6908a6ab1952ce279)
+        ;
+
+        
+    
+    
+            var circle_marker_aa341827b08e482caee8b0891bf78763 = L.circleMarker(
+                [41.76, -73.75],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5217, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_9774fce61cdb49b7ba473bb460c029d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67552b1d655a471f83593bd17c990710 = $(`<div id="html_67552b1d655a471f83593bd17c990710" style="width: 100.0%; height: 100.0%;">Dutchess County</div>`)[0];
+            popup_9774fce61cdb49b7ba473bb460c029d4.setContent(html_67552b1d655a471f83593bd17c990710);
+        
+
+        circle_marker_aa341827b08e482caee8b0891bf78763.bindPopup(popup_9774fce61cdb49b7ba473bb460c029d4)
+        ;
+
+        
+    
+    
+            var circle_marker_9657531e50ff4192b82488aaee48b3da = L.circleMarker(
+                [42.75, -78.78],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7771, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_742d84c2ba3b46a1b3e440133255bb5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b55e70c552fa41ea969847571368a035 = $(`<div id="html_b55e70c552fa41ea969847571368a035" style="width: 100.0%; height: 100.0%;">Erie County</div>`)[0];
+            popup_742d84c2ba3b46a1b3e440133255bb5e.setContent(html_b55e70c552fa41ea969847571368a035);
+        
+
+        circle_marker_9657531e50ff4192b82488aaee48b3da.bindPopup(popup_742d84c2ba3b46a1b3e440133255bb5e)
+        ;
+
+        
+    
+    
+            var circle_marker_adc1d34f10d54627a2a23ac237273f31 = L.circleMarker(
+                [44.11, -73.77],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6607, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_b256f0652ebc4cf0a35a15e6ebaf80b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f12a831b931a419a8c45d101c2e34cc4 = $(`<div id="html_f12a831b931a419a8c45d101c2e34cc4" style="width: 100.0%; height: 100.0%;">Essex County</div>`)[0];
+            popup_b256f0652ebc4cf0a35a15e6ebaf80b3.setContent(html_f12a831b931a419a8c45d101c2e34cc4);
+        
+
+        circle_marker_adc1d34f10d54627a2a23ac237273f31.bindPopup(popup_b256f0652ebc4cf0a35a15e6ebaf80b3)
+        ;
+
+        
+    
+    
+            var circle_marker_0c510ada29eb4cf09c7cbe014346969e = L.circleMarker(
+                [44.6, -74.31],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3892, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_4a686d54453b49548ddc9ce15b489ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6a783254daa4d658b305e796fc680b1 = $(`<div id="html_a6a783254daa4d658b305e796fc680b1" style="width: 100.0%; height: 100.0%;">Franklin County</div>`)[0];
+            popup_4a686d54453b49548ddc9ce15b489ef2.setContent(html_a6a783254daa4d658b305e796fc680b1);
+        
+
+        circle_marker_0c510ada29eb4cf09c7cbe014346969e.bindPopup(popup_4a686d54453b49548ddc9ce15b489ef2)
+        ;
+
+        
+    
+    
+            var circle_marker_872bc2bbb9e64224aff1409e0793813a = L.circleMarker(
+                [43.11, -74.42],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3182, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_1815cadcafd84935b319a022b05318ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_344d2aade72143c299332434a20d144b = $(`<div id="html_344d2aade72143c299332434a20d144b" style="width: 100.0%; height: 100.0%;">Fulton County</div>`)[0];
+            popup_1815cadcafd84935b319a022b05318ba.setContent(html_344d2aade72143c299332434a20d144b);
+        
+
+        circle_marker_872bc2bbb9e64224aff1409e0793813a.bindPopup(popup_1815cadcafd84935b319a022b05318ba)
+        ;
+
+        
+    
+    
+            var circle_marker_83a3bf2bb0634420b64e0df5bd6a53ed = L.circleMarker(
+                [43.0, -78.19],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.31, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_bf85dbe711af4a5f97de21bee8f91729 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3017e0baef9a4bd0b424e214f7afe4db = $(`<div id="html_3017e0baef9a4bd0b424e214f7afe4db" style="width: 100.0%; height: 100.0%;">Genesee County</div>`)[0];
+            popup_bf85dbe711af4a5f97de21bee8f91729.setContent(html_3017e0baef9a4bd0b424e214f7afe4db);
+        
+
+        circle_marker_83a3bf2bb0634420b64e0df5bd6a53ed.bindPopup(popup_bf85dbe711af4a5f97de21bee8f91729)
+        ;
+
+        
+    
+    
+            var circle_marker_1043613857ac47469a1a9eac5968300c = L.circleMarker(
+                [42.29, -74.13],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0816, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_056964fd02e44a329cedcebd563091cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c389e1b229314caf9ddb67a777866368 = $(`<div id="html_c389e1b229314caf9ddb67a777866368" style="width: 100.0%; height: 100.0%;">Greene County</div>`)[0];
+            popup_056964fd02e44a329cedcebd563091cc.setContent(html_c389e1b229314caf9ddb67a777866368);
+        
+
+        circle_marker_1043613857ac47469a1a9eac5968300c.bindPopup(popup_056964fd02e44a329cedcebd563091cc)
+        ;
+
+        
+    
+    
+            var circle_marker_c8d70b4bad24462bb6eecf092c49b248 = L.circleMarker(
+                [43.65, -74.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7371, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_624ec4d455574f1a8a0cf68a6cc01c11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e6476b75c1f4d2483a07f783ce2b3dc = $(`<div id="html_0e6476b75c1f4d2483a07f783ce2b3dc" style="width: 100.0%; height: 100.0%;">Hamilton County</div>`)[0];
+            popup_624ec4d455574f1a8a0cf68a6cc01c11.setContent(html_0e6476b75c1f4d2483a07f783ce2b3dc);
+        
+
+        circle_marker_c8d70b4bad24462bb6eecf092c49b248.bindPopup(popup_624ec4d455574f1a8a0cf68a6cc01c11)
+        ;
+
+        
+    
+    
+            var circle_marker_9b4449ebdad048e48efa8faba12f47fb = L.circleMarker(
+                [43.41, -74.96],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.228, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_51a926d940e64c629d6d81e0eb0cbd62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7459cda8e4bf465380083134d355f4e4 = $(`<div id="html_7459cda8e4bf465380083134d355f4e4" style="width: 100.0%; height: 100.0%;">Herkimer County</div>`)[0];
+            popup_51a926d940e64c629d6d81e0eb0cbd62.setContent(html_7459cda8e4bf465380083134d355f4e4);
+        
+
+        circle_marker_9b4449ebdad048e48efa8faba12f47fb.bindPopup(popup_51a926d940e64c629d6d81e0eb0cbd62)
+        ;
+
+        
+    
+    
+            var circle_marker_efdc41182cfc4e36b8854f04a2d39a8e = L.circleMarker(
+                [43.99, -76.05],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6585, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_4855829b3bfd431fad0c51c25e72945f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9059dcff7c384a73a3d4dbdcd6570e1e = $(`<div id="html_9059dcff7c384a73a3d4dbdcd6570e1e" style="width: 100.0%; height: 100.0%;">Jefferson County</div>`)[0];
+            popup_4855829b3bfd431fad0c51c25e72945f.setContent(html_9059dcff7c384a73a3d4dbdcd6570e1e);
+        
+
+        circle_marker_efdc41182cfc4e36b8854f04a2d39a8e.bindPopup(popup_4855829b3bfd431fad0c51c25e72945f)
+        ;
+
+        
+    
+    
+            var circle_marker_9534f6719da84651a86c1999a521fdd3 = L.circleMarker(
+                [40.692778, -73.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8104, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_eecaa2e00b444af5a2c91151f552033c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_548316be1821490691509afb7f003d13 = $(`<div id="html_548316be1821490691509afb7f003d13" style="width: 100.0%; height: 100.0%;">Kings County</div>`)[0];
+            popup_eecaa2e00b444af5a2c91151f552033c.setContent(html_548316be1821490691509afb7f003d13);
+        
+
+        circle_marker_9534f6719da84651a86c1999a521fdd3.bindPopup(popup_eecaa2e00b444af5a2c91151f552033c)
+        ;
+
+        
+    
+    
+            var circle_marker_d2d715317e034961a226338ec40dcad6 = L.circleMarker(
+                [43.79, -75.45],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.729, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_c743b30a8cab4604ae937475f1207008 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb733ab5201b4c2cb774fb8d4de21fef = $(`<div id="html_bb733ab5201b4c2cb774fb8d4de21fef" style="width: 100.0%; height: 100.0%;">Lewis County</div>`)[0];
+            popup_c743b30a8cab4604ae937475f1207008.setContent(html_bb733ab5201b4c2cb774fb8d4de21fef);
+        
+
+        circle_marker_d2d715317e034961a226338ec40dcad6.bindPopup(popup_c743b30a8cab4604ae937475f1207008)
+        ;
+
+        
+    
+    
+            var circle_marker_75ef10c2e05d467b8ffffae382d1cf42 = L.circleMarker(
+                [42.73, -77.77],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4034, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_bd914fac926740d6b042c64d472951cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16c7a597f6514b6d9006895b3cd4bace = $(`<div id="html_16c7a597f6514b6d9006895b3cd4bace" style="width: 100.0%; height: 100.0%;">Livingston County</div>`)[0];
+            popup_bd914fac926740d6b042c64d472951cb.setContent(html_16c7a597f6514b6d9006895b3cd4bace);
+        
+
+        circle_marker_75ef10c2e05d467b8ffffae382d1cf42.bindPopup(popup_bd914fac926740d6b042c64d472951cb)
+        ;
+
+        
+    
+    
+            var circle_marker_c9b2ac5f91ed4195864ab9f1e2b57028 = L.circleMarker(
+                [42.91, -75.67],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4557, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_327107fb4f944f9fa7f40f71baa21cf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26184794bcb04947918c260ad8b2914a = $(`<div id="html_26184794bcb04947918c260ad8b2914a" style="width: 100.0%; height: 100.0%;">Madison County</div>`)[0];
+            popup_327107fb4f944f9fa7f40f71baa21cf6.setContent(html_26184794bcb04947918c260ad8b2914a);
+        
+
+        circle_marker_c9b2ac5f91ed4195864ab9f1e2b57028.bindPopup(popup_327107fb4f944f9fa7f40f71baa21cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_50fc451719f04a36adcb5df89acd5a72 = L.circleMarker(
+                [43.3, -77.69],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7082, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_ca0d39fc785e47f9bc4c78d9415ca54f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d78aefb1d3e34fd8a278ba4e12cbe05c = $(`<div id="html_d78aefb1d3e34fd8a278ba4e12cbe05c" style="width: 100.0%; height: 100.0%;">Monroe County</div>`)[0];
+            popup_ca0d39fc785e47f9bc4c78d9415ca54f.setContent(html_d78aefb1d3e34fd8a278ba4e12cbe05c);
+        
+
+        circle_marker_50fc451719f04a36adcb5df89acd5a72.bindPopup(popup_ca0d39fc785e47f9bc4c78d9415ca54f)
+        ;
+
+        
+    
+    
+            var circle_marker_ff52bd53d84843079dbfda7dda6a1ff1 = L.circleMarker(
+                [42.91, -74.44],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2764, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_ccc0e2b9b2f145cd99693dd44cfba2e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f942f70d0484bfeab0c9e832f1f0095 = $(`<div id="html_9f942f70d0484bfeab0c9e832f1f0095" style="width: 100.0%; height: 100.0%;">Montgomery County</div>`)[0];
+            popup_ccc0e2b9b2f145cd99693dd44cfba2e8.setContent(html_9f942f70d0484bfeab0c9e832f1f0095);
+        
+
+        circle_marker_ff52bd53d84843079dbfda7dda6a1ff1.bindPopup(popup_ccc0e2b9b2f145cd99693dd44cfba2e8)
+        ;
+
+        
+    
+    
+            var circle_marker_15fb5cb50b614e65bc7a666314011560 = L.circleMarker(
+                [40.747222, -73.638056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.8969, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_d8348663a82a4021abd973222e34664b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a0405dc0c0a4fdb9a8d521c315fc10a = $(`<div id="html_1a0405dc0c0a4fdb9a8d521c315fc10a" style="width: 100.0%; height: 100.0%;">Nassau County</div>`)[0];
+            popup_d8348663a82a4021abd973222e34664b.setContent(html_1a0405dc0c0a4fdb9a8d521c315fc10a);
+        
+
+        circle_marker_15fb5cb50b614e65bc7a666314011560.bindPopup(popup_d8348663a82a4021abd973222e34664b)
+        ;
+
+        
+    
+    
+            var circle_marker_f14443dd065a4a3d9063a040a057ee6a = L.circleMarker(
+                [40.728333, -73.994167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.8499, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_6a69a2639df947fbb7db1403f01827a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e913ae94aa1b4208896c3a96c5a4cf8f = $(`<div id="html_e913ae94aa1b4208896c3a96c5a4cf8f" style="width: 100.0%; height: 100.0%;">New York County</div>`)[0];
+            popup_6a69a2639df947fbb7db1403f01827a8.setContent(html_e913ae94aa1b4208896c3a96c5a4cf8f);
+        
+
+        circle_marker_f14443dd065a4a3d9063a040a057ee6a.bindPopup(popup_6a69a2639df947fbb7db1403f01827a8)
+        ;
+
+        
+    
+    
+            var circle_marker_d62f460baa0941c48657581d80ba6efb = L.circleMarker(
+                [43.32, -78.79],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4385, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_634ed05b8ebc496db728e8e0cc0ab21a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cbe142d42f04c5e9e017ed6d483c67b = $(`<div id="html_0cbe142d42f04c5e9e017ed6d483c67b" style="width: 100.0%; height: 100.0%;">Niagara County</div>`)[0];
+            popup_634ed05b8ebc496db728e8e0cc0ab21a.setContent(html_0cbe142d42f04c5e9e017ed6d483c67b);
+        
+
+        circle_marker_d62f460baa0941c48657581d80ba6efb.bindPopup(popup_634ed05b8ebc496db728e8e0cc0ab21a)
+        ;
+
+        
+    
+    
+            var circle_marker_eb5a6acec37246edb22ec0de156ec2a2 = L.circleMarker(
+                [43.24, -75.44],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3799, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_6cdf745f7b6e411c9149c4e67f9a8d6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_827f5911af774a83ae1eff9b4a2b1eaa = $(`<div id="html_827f5911af774a83ae1eff9b4a2b1eaa" style="width: 100.0%; height: 100.0%;">Oneida County</div>`)[0];
+            popup_6cdf745f7b6e411c9149c4e67f9a8d6a.setContent(html_827f5911af774a83ae1eff9b4a2b1eaa);
+        
+
+        circle_marker_eb5a6acec37246edb22ec0de156ec2a2.bindPopup(popup_6cdf745f7b6e411c9149c4e67f9a8d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_9ae8b1491367426c93e45be8f432dc82 = L.circleMarker(
+                [43.01, -76.2],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6734, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_1d35a8f149ef4d7f9af867f6a61f4ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d28415ed91614b2e94cbcb69c9aeec4b = $(`<div id="html_d28415ed91614b2e94cbcb69c9aeec4b" style="width: 100.0%; height: 100.0%;">Onondaga County</div>`)[0];
+            popup_1d35a8f149ef4d7f9af867f6a61f4ad3.setContent(html_d28415ed91614b2e94cbcb69c9aeec4b);
+        
+
+        circle_marker_9ae8b1491367426c93e45be8f432dc82.bindPopup(popup_1d35a8f149ef4d7f9af867f6a61f4ad3)
+        ;
+
+        
+    
+    
+            var circle_marker_65182c1ec9b8455db3490dcd9ff4917c = L.circleMarker(
+                [42.85, -77.29],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5635, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_67b68ec8a4624dcabff8f2ac2a44742b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18fbcc18469c4ffdaadf77cae01751c3 = $(`<div id="html_18fbcc18469c4ffdaadf77cae01751c3" style="width: 100.0%; height: 100.0%;">Ontario County</div>`)[0];
+            popup_67b68ec8a4624dcabff8f2ac2a44742b.setContent(html_18fbcc18469c4ffdaadf77cae01751c3);
+        
+
+        circle_marker_65182c1ec9b8455db3490dcd9ff4917c.bindPopup(popup_67b68ec8a4624dcabff8f2ac2a44742b)
+        ;
+
+        
+    
+    
+            var circle_marker_721f7ae23fb04e17bcd1de37f500b9fa = L.circleMarker(
+                [41.4, -74.31],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.7216, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_2de2f9fc95f14a818607c0531628feea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50deb04f32d549d584c1356ab99d7de9 = $(`<div id="html_50deb04f32d549d584c1356ab99d7de9" style="width: 100.0%; height: 100.0%;">Orange County</div>`)[0];
+            popup_2de2f9fc95f14a818607c0531628feea.setContent(html_50deb04f32d549d584c1356ab99d7de9);
+        
+
+        circle_marker_721f7ae23fb04e17bcd1de37f500b9fa.bindPopup(popup_2de2f9fc95f14a818607c0531628feea)
+        ;
+
+        
+    
+    
+            var circle_marker_c9dd4b7db4d040c1b186ee8cd617b897 = L.circleMarker(
+                [43.37, -78.23],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0036, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_c5b1db12bef8427fb4d3970a51a79804 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ef8e2cef3be4c5bac7182da337ab9c9 = $(`<div id="html_8ef8e2cef3be4c5bac7182da337ab9c9" style="width: 100.0%; height: 100.0%;">Orleans County</div>`)[0];
+            popup_c5b1db12bef8427fb4d3970a51a79804.setContent(html_8ef8e2cef3be4c5bac7182da337ab9c9);
+        
+
+        circle_marker_c9dd4b7db4d040c1b186ee8cd617b897.bindPopup(popup_c5b1db12bef8427fb4d3970a51a79804)
+        ;
+
+        
+    
+    
+            var circle_marker_4ead897c0dcf4caeb495597a2059a6e0 = L.circleMarker(
+                [43.47, -76.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3542, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_23246572675846a2b7d5dadb688cbe09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b80256b456a348a7822cc5440038fe31 = $(`<div id="html_b80256b456a348a7822cc5440038fe31" style="width: 100.0%; height: 100.0%;">Oswego County</div>`)[0];
+            popup_23246572675846a2b7d5dadb688cbe09.setContent(html_b80256b456a348a7822cc5440038fe31);
+        
+
+        circle_marker_4ead897c0dcf4caeb495597a2059a6e0.bindPopup(popup_23246572675846a2b7d5dadb688cbe09)
+        ;
+
+        
+    
+    
+            var circle_marker_c010f6bbe124477b8e72ea22e3704217 = L.circleMarker(
+                [42.63, -75.04],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9255, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_87df40006ea0430d814de552469ec9de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77eb6d9f2f78451992ae25ff6d9f359d = $(`<div id="html_77eb6d9f2f78451992ae25ff6d9f359d" style="width: 100.0%; height: 100.0%;">Otsego County</div>`)[0];
+            popup_87df40006ea0430d814de552469ec9de.setContent(html_77eb6d9f2f78451992ae25ff6d9f359d);
+        
+
+        circle_marker_c010f6bbe124477b8e72ea22e3704217.bindPopup(popup_87df40006ea0430d814de552469ec9de)
+        ;
+
+        
+    
+    
+            var circle_marker_f554cdc385ce4af986f41104825ab6dd = L.circleMarker(
+                [41.43, -73.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2519, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_89945d0317224d379ffedb17d7aefbb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56a20127b41042c296eca4b6b76b4cab = $(`<div id="html_56a20127b41042c296eca4b6b76b4cab" style="width: 100.0%; height: 100.0%;">Putnam County</div>`)[0];
+            popup_89945d0317224d379ffedb17d7aefbb0.setContent(html_56a20127b41042c296eca4b6b76b4cab);
+        
+
+        circle_marker_f554cdc385ce4af986f41104825ab6dd.bindPopup(popup_89945d0317224d379ffedb17d7aefbb0)
+        ;
+
+        
+    
+    
+            var circle_marker_17ff28f19f144a79a9b0337b2108cf56 = L.circleMarker(
+                [40.704167, -73.917778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0231, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_629ac2ed6b444d2e81a371dfb2b9aa02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5401e40cd0bf41f4ba33816aee9f4b16 = $(`<div id="html_5401e40cd0bf41f4ba33816aee9f4b16" style="width: 100.0%; height: 100.0%;">Queens County</div>`)[0];
+            popup_629ac2ed6b444d2e81a371dfb2b9aa02.setContent(html_5401e40cd0bf41f4ba33816aee9f4b16);
+        
+
+        circle_marker_17ff28f19f144a79a9b0337b2108cf56.bindPopup(popup_629ac2ed6b444d2e81a371dfb2b9aa02)
+        ;
+
+        
+    
+    
+            var circle_marker_0a56b99bdcec4c31808a909e185b2e0b = L.circleMarker(
+                [42.71, -73.49],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7514, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_5426d3397a0d4085ab044d7282e18892 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82ad6bcdba084d21bc8995226e3ab538 = $(`<div id="html_82ad6bcdba084d21bc8995226e3ab538" style="width: 100.0%; height: 100.0%;">Rensselaer County</div>`)[0];
+            popup_5426d3397a0d4085ab044d7282e18892.setContent(html_82ad6bcdba084d21bc8995226e3ab538);
+        
+
+        circle_marker_0a56b99bdcec4c31808a909e185b2e0b.bindPopup(popup_5426d3397a0d4085ab044d7282e18892)
+        ;
+
+        
+    
+    
+            var circle_marker_c020b7e2aa0e481380b7a6e84f88ba56 = L.circleMarker(
+                [40.576281, -74.144839],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.089, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_49dd024ffd5444c691dbdc4d8c21a362 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_789a063578bd452ca836ac6d54dac735 = $(`<div id="html_789a063578bd452ca836ac6d54dac735" style="width: 100.0%; height: 100.0%;">Richmond County</div>`)[0];
+            popup_49dd024ffd5444c691dbdc4d8c21a362.setContent(html_789a063578bd452ca836ac6d54dac735);
+        
+
+        circle_marker_c020b7e2aa0e481380b7a6e84f88ba56.bindPopup(popup_49dd024ffd5444c691dbdc4d8c21a362)
+        ;
+
+        
+    
+    
+            var circle_marker_0aef0f271a4a4ca9a46985a2556fad19 = L.circleMarker(
+                [41.15, -74.03],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.7859, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_3ba79db8beeb444da2fcb18966110b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ba75d87e8b343f9aa905ec6e6deb4ed = $(`<div id="html_2ba75d87e8b343f9aa905ec6e6deb4ed" style="width: 100.0%; height: 100.0%;">Rockland County</div>`)[0];
+            popup_3ba79db8beeb444da2fcb18966110b09.setContent(html_2ba75d87e8b343f9aa905ec6e6deb4ed);
+        
+
+        circle_marker_0aef0f271a4a4ca9a46985a2556fad19.bindPopup(popup_3ba79db8beeb444da2fcb18966110b09)
+        ;
+
+        
+    
+    
+            var circle_marker_985dd3a2824d4a97b7c16d80000b5965 = L.circleMarker(
+                [43.11, -73.87],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.1756, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_33909bd2adbd4643990b7cb80cceece0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be466550567646a39b8cdbca881e818d = $(`<div id="html_be466550567646a39b8cdbca881e818d" style="width: 100.0%; height: 100.0%;">Saratoga County</div>`)[0];
+            popup_33909bd2adbd4643990b7cb80cceece0.setContent(html_be466550567646a39b8cdbca881e818d);
+        
+
+        circle_marker_985dd3a2824d4a97b7c16d80000b5965.bindPopup(popup_33909bd2adbd4643990b7cb80cceece0)
+        ;
+
+        
+    
+    
+            var circle_marker_5f6eb24c93ed48909111635d2f6d55b7 = L.circleMarker(
+                [42.81, -74.07],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0081, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_cea47a7d91c74b2bbbb2510e78bc3918 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_347a7928152146c083cf12151c6bad19 = $(`<div id="html_347a7928152146c083cf12151c6bad19" style="width: 100.0%; height: 100.0%;">Schenectady County</div>`)[0];
+            popup_cea47a7d91c74b2bbbb2510e78bc3918.setContent(html_347a7928152146c083cf12151c6bad19);
+        
+
+        circle_marker_5f6eb24c93ed48909111635d2f6d55b7.bindPopup(popup_cea47a7d91c74b2bbbb2510e78bc3918)
+        ;
+
+        
+    
+    
+            var circle_marker_16b81e1b1cbc4e059562488493568a87 = L.circleMarker(
+                [42.59, -74.44],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.885, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_44fcbd8b4d464797a837caa67b3ea3bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e50ff9dc33294e58a0275ab669b4d526 = $(`<div id="html_e50ff9dc33294e58a0275ab669b4d526" style="width: 100.0%; height: 100.0%;">Schoharie County</div>`)[0];
+            popup_44fcbd8b4d464797a837caa67b3ea3bd.setContent(html_e50ff9dc33294e58a0275ab669b4d526);
+        
+
+        circle_marker_16b81e1b1cbc4e059562488493568a87.bindPopup(popup_44fcbd8b4d464797a837caa67b3ea3bd)
+        ;
+
+        
+    
+    
+            var circle_marker_95c15bd0629544caad61745cd3a80ee2 = L.circleMarker(
+                [42.39, -76.88],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3835, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_2ddff61b71474635a92446840da96ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49017b1dba054b4caf8fcaec44d1a295 = $(`<div id="html_49017b1dba054b4caf8fcaec44d1a295" style="width: 100.0%; height: 100.0%;">Schuyler County</div>`)[0];
+            popup_2ddff61b71474635a92446840da96ba5.setContent(html_49017b1dba054b4caf8fcaec44d1a295);
+        
+
+        circle_marker_95c15bd0629544caad61745cd3a80ee2.bindPopup(popup_2ddff61b71474635a92446840da96ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_dcd637c56d344afd8f4080a99cfa7c85 = L.circleMarker(
+                [42.79, -76.83],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2813, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_bd15813513ee476e9b46aaee8629a421 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd324b070972423fbe0dce5f4c806cbc = $(`<div id="html_dd324b070972423fbe0dce5f4c806cbc" style="width: 100.0%; height: 100.0%;">Seneca County</div>`)[0];
+            popup_bd15813513ee476e9b46aaee8629a421.setContent(html_dd324b070972423fbe0dce5f4c806cbc);
+        
+
+        circle_marker_dcd637c56d344afd8f4080a99cfa7c85.bindPopup(popup_bd15813513ee476e9b46aaee8629a421)
+        ;
+
+        
+    
+    
+            var circle_marker_e97d201f417342328a81058d487321e4 = L.circleMarker(
+                [44.5, -75.07],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2259, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_6268462a83c541bcaa64b2a33aee487d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5d3c312e50a46dab563599e03d1193b = $(`<div id="html_f5d3c312e50a46dab563599e03d1193b" style="width: 100.0%; height: 100.0%;">St. Lawrence County</div>`)[0];
+            popup_6268462a83c541bcaa64b2a33aee487d.setContent(html_f5d3c312e50a46dab563599e03d1193b);
+        
+
+        circle_marker_e97d201f417342328a81058d487321e4.bindPopup(popup_6268462a83c541bcaa64b2a33aee487d)
+        ;
+
+        
+    
+    
+            var circle_marker_ce8ee4005ca8486ebff091a570694614 = L.circleMarker(
+                [42.26, -77.39],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9669, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_7e5b8704bb9a408597d509a00a258a9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dda16a1f9fe545cabe28404bcfc4d1b4 = $(`<div id="html_dda16a1f9fe545cabe28404bcfc4d1b4" style="width: 100.0%; height: 100.0%;">Steuben County</div>`)[0];
+            popup_7e5b8704bb9a408597d509a00a258a9e.setContent(html_dda16a1f9fe545cabe28404bcfc4d1b4);
+        
+
+        circle_marker_ce8ee4005ca8486ebff091a570694614.bindPopup(popup_7e5b8704bb9a408597d509a00a258a9e)
+        ;
+
+        
+    
+    
+            var circle_marker_506384e1e1fd448889190c8ca6f1a4b9 = L.circleMarker(
+                [40.94, -72.68],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0478, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_972a50760a0e4b029b46037f35b17dbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b146c9e98014337a0d11f2019da1db2 = $(`<div id="html_7b146c9e98014337a0d11f2019da1db2" style="width: 100.0%; height: 100.0%;">Suffolk County</div>`)[0];
+            popup_972a50760a0e4b029b46037f35b17dbb.setContent(html_7b146c9e98014337a0d11f2019da1db2);
+        
+
+        circle_marker_506384e1e1fd448889190c8ca6f1a4b9.bindPopup(popup_972a50760a0e4b029b46037f35b17dbb)
+        ;
+
+        
+    
+    
+            var circle_marker_c482ac8f6ae946bc8972900c3cf2ff3d = L.circleMarker(
+                [41.72, -74.76],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.4917, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_d11d3e33c55f4331a878014d03520e7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a82ab02cb3094ed6a50386619104bfa2 = $(`<div id="html_a82ab02cb3094ed6a50386619104bfa2" style="width: 100.0%; height: 100.0%;">Sullivan County</div>`)[0];
+            popup_d11d3e33c55f4331a878014d03520e7e.setContent(html_a82ab02cb3094ed6a50386619104bfa2);
+        
+
+        circle_marker_c482ac8f6ae946bc8972900c3cf2ff3d.bindPopup(popup_d11d3e33c55f4331a878014d03520e7e)
+        ;
+
+        
+    
+    
+            var circle_marker_791fd8af49c84a4c8fd356aa77f8e00b = L.circleMarker(
+                [42.17, -76.3],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7542, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_b98ddccd01a14991857bbf16e7bbc66c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d86621a679d4d73a5299a5ac6390114 = $(`<div id="html_3d86621a679d4d73a5299a5ac6390114" style="width: 100.0%; height: 100.0%;">Tioga County</div>`)[0];
+            popup_b98ddccd01a14991857bbf16e7bbc66c.setContent(html_3d86621a679d4d73a5299a5ac6390114);
+        
+
+        circle_marker_791fd8af49c84a4c8fd356aa77f8e00b.bindPopup(popup_b98ddccd01a14991857bbf16e7bbc66c)
+        ;
+
+        
+    
+    
+            var circle_marker_28158b1e9d4740ad85e1f5f5599ba9b5 = L.circleMarker(
+                [42.45, -76.47],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9166, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_8c8980e67acc45d8863659a23675626b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d51abaf2e81343fdbe30026c5a46ce4b = $(`<div id="html_d51abaf2e81343fdbe30026c5a46ce4b" style="width: 100.0%; height: 100.0%;">Tompkins County</div>`)[0];
+            popup_8c8980e67acc45d8863659a23675626b.setContent(html_d51abaf2e81343fdbe30026c5a46ce4b);
+        
+
+        circle_marker_28158b1e9d4740ad85e1f5f5599ba9b5.bindPopup(popup_8c8980e67acc45d8863659a23675626b)
+        ;
+
+        
+    
+    
+            var circle_marker_b8247e494d7b4aa294a6f87f20637bf5 = L.circleMarker(
+                [41.89, -74.26],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3096, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_81ad693656bd470f9a34fa39f4543710 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7cd380ae3514c33901879bf9dad345d = $(`<div id="html_b7cd380ae3514c33901879bf9dad345d" style="width: 100.0%; height: 100.0%;">Ulster County</div>`)[0];
+            popup_81ad693656bd470f9a34fa39f4543710.setContent(html_b7cd380ae3514c33901879bf9dad345d);
+        
+
+        circle_marker_b8247e494d7b4aa294a6f87f20637bf5.bindPopup(popup_81ad693656bd470f9a34fa39f4543710)
+        ;
+
+        
+    
+    
+            var circle_marker_830ce094774f49c593b60e147201eca9 = L.circleMarker(
+                [43.56, -73.84],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.639, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_6e0780a0bee846d8922d73728fed3b2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d59175a02ac747b097473320ecab58b1 = $(`<div id="html_d59175a02ac747b097473320ecab58b1" style="width: 100.0%; height: 100.0%;">Warren County</div>`)[0];
+            popup_6e0780a0bee846d8922d73728fed3b2d.setContent(html_d59175a02ac747b097473320ecab58b1);
+        
+
+        circle_marker_830ce094774f49c593b60e147201eca9.bindPopup(popup_6e0780a0bee846d8922d73728fed3b2d)
+        ;
+
+        
+    
+    
+            var circle_marker_64b88c1464b94ed4b8f1f59fc0bd21b6 = L.circleMarker(
+                [43.323151, -73.428187],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6398, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_3c2482d9f243409ba7becd290f731c25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f22d5b5a96d4471ac51da061ea95fa1 = $(`<div id="html_4f22d5b5a96d4471ac51da061ea95fa1" style="width: 100.0%; height: 100.0%;">Washington County</div>`)[0];
+            popup_3c2482d9f243409ba7becd290f731c25.setContent(html_4f22d5b5a96d4471ac51da061ea95fa1);
+        
+
+        circle_marker_64b88c1464b94ed4b8f1f59fc0bd21b6.bindPopup(popup_3c2482d9f243409ba7becd290f731c25)
+        ;
+
+        
+    
+    
+            var circle_marker_7cafd59bd7214976b7f20a1fdedb36c7 = L.circleMarker(
+                [43.28, -77.05],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0609, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_7f070c3fbece4d079001a44836fcd2ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e5735f9fd234b61bf06d184b44fd44c = $(`<div id="html_4e5735f9fd234b61bf06d184b44fd44c" style="width: 100.0%; height: 100.0%;">Wayne County</div>`)[0];
+            popup_7f070c3fbece4d079001a44836fcd2ca.setContent(html_4e5735f9fd234b61bf06d184b44fd44c);
+        
+
+        circle_marker_7cafd59bd7214976b7f20a1fdedb36c7.bindPopup(popup_7f070c3fbece4d079001a44836fcd2ca)
+        ;
+
+        
+    
+    
+            var circle_marker_bb253117281e4154947e882d2993a874 = L.circleMarker(
+                [41.15, -73.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0162, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_abbc023769d4499fa6d0f15bca8960da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11334486e4c9418e8fb5808d76a3f7d4 = $(`<div id="html_11334486e4c9418e8fb5808d76a3f7d4" style="width: 100.0%; height: 100.0%;">Westchester County</div>`)[0];
+            popup_abbc023769d4499fa6d0f15bca8960da.setContent(html_11334486e4c9418e8fb5808d76a3f7d4);
+        
+
+        circle_marker_bb253117281e4154947e882d2993a874.bindPopup(popup_abbc023769d4499fa6d0f15bca8960da)
+        ;
+
+        
+    
+    
+            var circle_marker_3c22989af5d8416d9285a802bd22d239 = L.circleMarker(
+                [42.833333, -78.083333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6479, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_c128a09df0194457bd0bc2f3b5f511e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_209da93929244d7a9c3c1b09aba15388 = $(`<div id="html_209da93929244d7a9c3c1b09aba15388" style="width: 100.0%; height: 100.0%;">Wyoming County</div>`)[0];
+            popup_c128a09df0194457bd0bc2f3b5f511e1.setContent(html_209da93929244d7a9c3c1b09aba15388);
+        
+
+        circle_marker_3c22989af5d8416d9285a802bd22d239.bindPopup(popup_c128a09df0194457bd0bc2f3b5f511e1)
+        ;
+
+        
+    
+    
+            var circle_marker_4a8f88154c4047ebb21d177c4f3538fa = L.circleMarker(
+                [42.64, -77.1],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2796, "stroke": true, "weight": 3}
+            ).addTo(map_d3b74c69eac8410f8932f73a131eff1d);
+        
+    
+        var popup_f605b42ab13d465ea21fa37313b82bfe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97ff25b1f3af42248fe1b24b308b1d7e = $(`<div id="html_97ff25b1f3af42248fe1b24b308b1d7e" style="width: 100.0%; height: 100.0%;">Yates County</div>`)[0];
+            popup_f605b42ab13d465ea21fa37313b82bfe.setContent(html_97ff25b1f3af42248fe1b24b308b1d7e);
+        
+
+        circle_marker_4a8f88154c4047ebb21d177c4f3538fa.bindPopup(popup_f605b42ab13d465ea21fa37313b82bfe)
+        ;
+
+        
+    
+</script>
